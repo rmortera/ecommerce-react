@@ -41,8 +41,8 @@ function ProductsItem({ item }) {
             alt={title}
             className="mb-4 h-32 drop-shadow-md md:h-64"
           />
-          <p className="my-4 font-semibold md:text-xl">{title}</p>
-          <p className="tex-xs md:text-xl">{description}</p>
+          <p className="my-4 text-[12px] font-semibold md:text-xl">{title}</p>
+          <p className="text-[10px] md:text-xl">{description}</p>
         </div>
         <div className="mb-2 mt-6 flex flex-col items-center justify-between">
           <p className="mb-4 text-xl">{formatCurrency(price)}</p>

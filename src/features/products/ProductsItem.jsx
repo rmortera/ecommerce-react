@@ -48,7 +48,7 @@ function ProductsItem({ item }) {
           <p className="mb-4 text-xl">{formatCurrency(price)}</p>
 
           {isInCart && (
-            <div className="flex items-center gap-3 md:gap-4">
+            <div className="flex items-center gap-6 md:gap-4">
               <UpdateItemQuantity id={id} currentQuantity={currentQuantity} />
               <DeleteItem id={id} />
             </div>
@@ -96,7 +96,7 @@ function ProductsItem({ item }) {
           <p className="mb-4">{formatCurrency(price)}</p>
 
           {isInCart && (
-            <div className="flex items-center gap-3  md:gap-4">
+            <div className="flex flex-col items-center gap-3 md:flex-row md:gap-4">
               <UpdateItemQuantity id={id} currentQuantity={currentQuantity} />
               <DeleteItem id={id} />
             </div>
